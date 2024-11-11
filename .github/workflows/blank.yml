@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest  # 默认使用 GitHub 托管的虚拟机，没有 GPU
 
     container:
-      image: nvidia/cuda:11.2-base  # 使用包含 CUDA 和 NVIDIA 支持的 Docker 镜像
+      image: nvidia/cuda:11.2.2-cudnn8-runtime-ubuntu20.04  # 使用包含 CUDA 和 NVIDIA 支持的 Docker 镜像
       options: --gpus all  # 启用所有可用的 GPU
 
     steps:
